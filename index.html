@@ -6,6 +6,27 @@
 
     <title>Genesys Test Website</title>
 
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WLTQCGVX');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -56,6 +77,10 @@
             cursor: pointer;
         }
 
+        button:hover {
+            opacity: 0.9;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -64,6 +89,17 @@
 </head>
 
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WLTQCGVX"
+            height="0"
+            width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <header>
         <h1>Welcome to My Test Bank</h1>
@@ -85,6 +121,7 @@
         <section id="cards">
             <h2>Cards</h2>
             <p>Explore our credit card services and benefits.</p>
+
             <button onclick="alert('Credit card offer selected!')">
                 Explore Credit Cards
             </button>
@@ -93,6 +130,7 @@
         <section id="loans">
             <h2>Loans</h2>
             <p>Looking for a business loan?</p>
+
             <button onclick="alert('Business loan selected!')">
                 Explore Business Loans
             </button>
